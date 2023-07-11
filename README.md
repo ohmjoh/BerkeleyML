@@ -3,33 +3,39 @@ README
 
 This repo contains practical application assignment 5.1 from Berkeley Engineering & Berkeley Haas Professional Certificate in Machine Learning and Artificial Intelligence.
 
-## News article classification
-Named Entity Recognition
-1. News article classification
-Background
-The data used in this project comes from the Sharing News Online project which investigates why people share news on social media. (It is not a NLP/machine learning related research, but if you're interested in political economics or journalism, go ahead and check out their book.)
-The authors also ask an interesting question: which topics of articles get shared?
-The task of classifying news articles into different topics has to be done to perform this type of research.
+## File Navigation
+A Jupyter notebook named "PracticalApplication5.1.ipynb" contains the code for this analysis.
+data folder contains the data used for this analysis.
 
-Objectives
-The goal for this project is to explore different feature extraction methods for supervised text classification of news articles. The workflow looks like:
+## Data
+The data comes to us from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’. There are five different types of coupons -- less expensive restaurants (under $20), coffee houses, carry out & take away, bar, and more expensive restaurants ($20 - $50).
 
-Train a statistical text classification system.
-Evaluate the prediction and analyze errors.
-Imporve the model through experiments with different feature extraction methods.
-Data
-2284 news articles which are annotated with one of ten categories: Business, Entertainment, Health, Politics, Science/Technology, Society, Sports, War, Other and Error.
+## Analysis
+The analysis is composed of two parts:
+* Answering the prompts of the assignments
+* Independant investigation
 
-Data is not shared in this repo.
+## Independant Investigation
 
-Method
-I used logistic regression for the statistical model used different feature extraction methods for each experiment. 10-fold cross validation is used for testing.
+### Background
+I selected the subdataset with people who received the coupons for Coffee House.
 
-Baseline system: bag-of-words
-Experiment 1: Cleaning and treating abbreviations
-Experiment 2: N-grams
-Experiment 3: Stop words, TF-IDF
-Experiment 4: Stemming
-Experiment 5: WordNet synsets, hypernyms
-Results
-2. Named Entity Recognition
+### Objectives
+The goal for this investigation is to highlights the differences between customers who did and did not accept the coupons. 
+I interpretation of descriptive and inferential statistics to explore the data utilizing visulization skills.
+
+### Conclusion
+Based on the data exploration of the Coffee House coupons, the following hypotheses can be derived regarding the characteristics of drivers who accepted the coupons:
+
+* Temperature: Drivers are more likely to use the coffee house coupon as the temperature gets warmer.
+* Age: Younger drivers are more likely to accept the coffee house coupon compared to older drivers.
+* Income: Drivers with higher income are more likely to accept the coffee house coupon.
+* Coffee House Visit Frequency: As the frequency of visiting coffee houses increases, the acceptance rate of coffee house coupons also increases until it reaches a peak at around 3 visits per month and then slightly decreases.
+* Restaurant Visit Frequency: Drivers who visit restaurants more frequently, regardless of the price range, are more likely to accept the coffee house coupon.
+* Distance: The acceptance rate of the coffee house coupon decreases as the distance from the driver's location to the coffee house increases.
+* Carry Away: Drivers who frequently purchase take-away food are more likely to accept the coffee house coupon.
+* Other Variables: The relationships between acceptance rate and variables such as passenger type, weather, expiration, gender, marital status, presence of children, and same direction as the destination do not show consistent patterns or strong relationships.
+
+These hypotheses provide insights into the characteristics of drivers who are more likely to accept Coffee House coupons. These insights can be utilized when deciding target demographic/environment to distribute the coupons.
+
+However, further statistical analysis and hypothesis testing would be required to validate these findings and determine the significance of the relationships observed.

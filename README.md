@@ -29,12 +29,12 @@ Based on the data exploration of the Coffee House coupons, the following hypothe
 
 * Temperature: Drivers are more likely to use the coffee house coupon as the temperature gets warmer.
 * Age: Younger drivers are more likely to accept the coffee house coupon compared to older drivers.
-* Income: Drivers with higher income are more likely to accept the coffee house coupon.
 * Coffee House Visit Frequency: As the frequency of visiting coffee houses increases, the acceptance rate of coffee house coupons also increases until it reaches a peak at around 3 visits per month and then slightly decreases.
 * Restaurant Visit Frequency: Drivers who visit restaurants more frequently, regardless of the price range, are more likely to accept the coffee house coupon.
 * Distance: The acceptance rate of the coffee house coupon decreases as the distance from the driver's location to the coffee house increases.
 * Carry Away: Drivers who frequently purchase take-away food are more likely to accept the coffee house coupon.
-* Other Variables: The relationships between acceptance rate and variables such as passenger type, weather, expiration, gender, marital status, presence of children, and same direction as the destination do not show consistent patterns or strong relationships.
+* Other Variables: Some categorical variables such as destination, passenger type, weather, expiration, marital status show affect the acceptance rate of the coffee house coupon.
+* income, gender, presence of children, and same direction do not show consistent patterns or strong relationships.
 
 These hypotheses provide insights into the characteristics of drivers who are more likely to accept Coffee House coupons. These insights can be utilized when deciding target demographic/environment to distribute the coupons.
 
